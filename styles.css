@@ -1,0 +1,286 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f3f7f9;
+  }
+  
+  /* Navbar Styling */
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #333, #4CAF50);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    z-index: 10;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  #navbar a {
+    color: #f7f7f7;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  #navbar a:hover {
+    color: #ffdb4d;
+  }
+  
+  /* Welcome Section */
+  #welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('https://img.pikbest.com/wp/202346/high-tech-graphic-design-futuristic-motion-graphics-3d-rendered-abstract-background_9617545.jpg!w700wp') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .welcome-content {
+    display: inline-block;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+  }
+  
+  #welcome-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #welcome-section p {
+    font-size: 1.3rem;
+    max-width: 600px;
+  }
+  
+  .profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 4px solid #ffdb4d;
+  }
+  
+  /* About Section */
+  #about {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid #4CAF50;
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+  
+  /* Education Section */
+  #education {
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #4CAF50, #333);
+    color: #fff;
+    text-align: center;
+  }
+  
+  #education h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .education-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .education-table th, .education-table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .education-table th {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  
+  .education-table tr {
+    background-color: #f9f9f9;
+  }
+  
+  .education-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .education-table td {
+    color: #333;
+  }
+  
+  .education-table tr:hover {
+    background-color: #83d5bd;
+  }
+  
+  /* Projects Section */
+  #projects {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f3f7f9;
+  }
+  
+  #projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .project-tile {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  }
+  
+  .project-tile img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .project-tile h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .project-tile p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .project-tile a {
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .project-tile a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 60px 20px;
+    background: #444;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffdb4d;
+  }
+  
+  #contact p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Certificates Section */
+  #certificates {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+  }
+  
+  #certificates h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .certificate-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .certificate-img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .certificate-img:hover {
+    transform: scale(1.15);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #navbar {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
